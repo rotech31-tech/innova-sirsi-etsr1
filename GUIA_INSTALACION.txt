@@ -1,0 +1,81 @@
+SISTEMA INTEGRAL DE RELEVAMIENTO DE SALAS DE INFORMÁTICA ETSR - UTU
+Desarrollado por INNOVA SRL
+VERSIÓN 8 FINAL - GESTIÓN POR TURNOS
+
+============================================================
+IMPORTANTE: ESTA ENTREGA USA BASE LIMPIA
+============================================================
+
+Como esta versión cambia la estructura para trabajar por turnos y los datos
+actuales son solamente de prueba, la instalación recomendada es recrear la
+base de datos.
+
+1. Hacé una copia de seguridad de la carpeta actual por seguridad.
+2. Reemplazá la carpeta del proyecto por esta versión.
+3. En MySQL Workbench ejecutá:
+
+   database/innova_sirsi.sql
+
+   ATENCIÓN: este script recrea las tablas y elimina los datos de prueba.
+
+4. Encendé Apache y MySQL desde XAMPP.
+5. Abrí:
+
+   http://localhost/innova_sirsi_etsr/setup_admin.php
+
+6. Creá el primer Encargado de Sala y elegí su turno:
+   - Matutino
+   - Vespertino
+   - Nocturno
+
+7. Iniciá sesión con ese Encargado.
+8. Desde Profesores podés crear los Encargados de los otros dos turnos.
+9. Cuando los tres encargados estén creados y puedan ingresar, eliminá
+   setup_admin.php.
+
+============================================================
+CÓMO FUNCIONAN LOS TURNOS
+============================================================
+
+- Cada Encargado tiene un único turno operativo.
+- El panel identifica claramente el turno del Encargado.
+- Cada Encargado administra solamente:
+  * profesores de su turno;
+  * horarios de su turno;
+  * anuncios de su turno;
+  * tickets reportados para su turno.
+
+- Salas, equipos y periféricos son recursos institucionales compartidos.
+- Check-In, Check-Out e Historial de Salas son compartidos entre turnos,
+  porque describen el estado físico de la sala.
+
+PROFESORES EN MÁS DE UN TURNO
+- Un profesor utiliza una sola cuenta.
+- Si ya existe con la misma cédula y correo y otro Encargado lo registra,
+  el sistema vincula esa misma cuenta al nuevo turno.
+- No se duplica la cuenta ni se cambia su contraseña.
+
+============================================================
+RELEVO DE ENCARGADOS
+============================================================
+
+Para cambiar al Encargado de un turno:
+1. El Encargado actual crea al reemplazo en el mismo turno.
+2. El reemplazo inicia sesión y confirma que puede acceder.
+3. Desde la cuenta nueva se desactiva o archiva la cuenta anterior.
+4. El sistema no permite dejar un turno sin ningún Encargado activo.
+
+============================================================
+FUNCIONES QUE SE MANTIENEN
+============================================================
+
+- Horarios solamente de lunes a viernes.
+- Check-In / Check-Out con fotografías y observaciones.
+- Adopción del último Check-Out como estado del nuevo Check-In.
+- Historial compartido de salas.
+- QR por equipo.
+- Tickets de soporte.
+- Recuperación de contraseña mediante cédula + correo y enlace temporal.
+- Edición y archivado seguro de profesores, salas, equipos, periféricos y horarios.
+- Mensajes de éxito en verde suave y errores en rojo suave.
+- Diseño minimalista blanco y negro, responsivo.

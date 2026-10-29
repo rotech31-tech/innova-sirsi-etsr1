@@ -1,0 +1,14 @@
+AL SUBIR ESTA VERSIÓN AL UBUNTU SERVER
+
+No reemplazar directamente includes/config.php con la versión de XAMPP si el servidor ya funciona.
+El Ubuntu Server utiliza sus propias credenciales de MySQL (por ejemplo innova_app).
+
+Proceso recomendado:
+1. Hacer copia de seguridad de la carpeta actual y de la base de datos.
+2. Conservar una copia del includes/config.php que funciona en Ubuntu.
+3. Subir los archivos de la nueva versión.
+4. Restaurar el config.php del servidor o volver a colocar sus credenciales.
+5. Verificar permisos de uploads.
+6. Reiniciar Apache si fuera necesario.
+
+La actualización visual no requiere reinstalar Apache, PHP, MySQL ni SSH.

@@ -1,0 +1,7 @@
+{
+  "name": "innova-srl/sirsi-etsr",
+  "description": "Sistema Integral de Relevamiento de Salas de Informática ETSR - UTU",
+  "require": {
+    "phpmailer/phpmailer": "^6.12"
+  }
+}

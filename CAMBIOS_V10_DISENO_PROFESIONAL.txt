@@ -1,0 +1,36 @@
+VERSIÓN 10 - DISEÑO PROFESIONAL INSTITUCIONAL
+
+BASE FUNCIONAL
+- Se conserva la funcionalidad completa de la Versión 8.
+- Turnos Matutino, Vespertino y Nocturno.
+- Encargados asociados a turnos.
+- Profesores con uno o varios turnos.
+- Gestión de horarios de lunes a viernes.
+- Salas, equipos y periféricos compartidos institucionalmente.
+- Tickets de soporte por turno.
+- Check-In y Check-Out.
+- Historial de salas y adopción del último estado.
+- Recuperación de contraseña.
+- QR de equipos.
+- Edición y archivado seguro.
+- FAQ / Ayuda.
+
+CAMBIOS VISUALES
+- Nueva identidad visual en azul acero, azul oscuro, gris y blanco.
+- Se eliminaron emojis e ilustraciones decorativas.
+- Navegación institucional horizontal y responsive.
+- Inicio del panel con fotografía real de la ETSR - UTU.
+- Login con fotografía real y formulario institucional.
+- Panel con información jerarquizada y menos apariencia de plantilla.
+- Tarjetas reducidas a bloques funcionales y secciones de trabajo.
+- Tablas, formularios y botones rediseñados con apariencia administrativa.
+- Mensajes de error en rojo claro, confirmaciones en celeste y avisos en verde agua.
+- Diseño responsive para escritorio, tablet y móvil.
+
+BASE DE DATOS
+- La estructura requerida es la misma de la V8 incluida en database/innova_sirsi.sql.
+- En XAMPP la configuración incluida utiliza MySQL root sin contraseña, que es la configuración predeterminada habitual de XAMPP.
+- Para Ubuntu Server se debe conservar/adaptar includes/config.php con el usuario innova_app y su contraseña local.
+
+ARCHIVO DE FOTO
+- assets/img/etsr-rivera.webp

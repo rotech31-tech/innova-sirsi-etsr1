@@ -1,0 +1,25 @@
+INNOVA SIRSI V11.2 - EQUIPOS SIMPLIFICADOS
+
+Se eliminaron del registro de equipos, tanto en la interfaz como en MySQL:
+- Nombre
+- Modelo
+- Número de serie
+- IP
+- MAC
+
+Se mantienen:
+- Sala
+- Código de inventario
+- Tipo
+- Marca
+- Sistema operativo
+- Estado
+- Observaciones
+- QR y campos internos de control
+
+También se actualizaron el mapa interactivo, ficha QR, ficha del equipo, ficha de sala, búsqueda y exportación CSV.
+
+Si ya existe una base V11/V8, ejecutar una sola vez:
+ACTUALIZACION_V11_2_SIMPLIFICAR_EQUIPOS.sql
+
+Si se crea una base desde cero, database/innova_sirsi.sql ya contiene la estructura simplificada y no hace falta ejecutar la actualización.

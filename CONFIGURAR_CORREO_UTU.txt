@@ -1,0 +1,32 @@
+CONFIGURACIÓN DEL CORREO INSTITUCIONAL - INNOVA SRL
+
+Antes de tocar includes/mail_config.php, pedí al responsable de UTU los datos
+SMTP oficiales. No alcanza con conocer solamente la dirección de correo.
+
+DATOS A PEDIR:
+- Correo institucional que usará el sistema:
+- Host SMTP:
+- Puerto:
+- Cifrado (TLS/STARTTLS, SSL u otro):
+- ¿SMTP AUTH está habilitado?:
+- Usuario SMTP:
+- Tipo de credencial (contraseña / clave de aplicación / OAuth2 / otro):
+
+ARCHIVO A EDITAR:
+includes/mail_config.php
+
+EJEMPLO ILUSTRATIVO (NO COPIAR SIN CONFIRMAR LOS DATOS DE UTU):
+
+MAIL_ENABLED = true
+MAIL_HOST = servidor informado por UTU
+MAIL_PORT = puerto informado por UTU
+MAIL_USERNAME = correo institucional
+MAIL_PASSWORD = credencial entregada/autorizada
+MAIL_ENCRYPTION = tls o ssl según indique UTU
+MAIL_FROM_ADDRESS = correo institucional
+
+IMPORTANTE:
+- No uses la cuenta personal del Encargado de Sala.
+- No subas una contraseña real a GitHub ni la envíes en trabajos o capturas.
+- El cambio de Encargado no exige cambiar la cuenta de correo del sistema.
+- Si la institución cambia la cuenta, solo se modifica este archivo.

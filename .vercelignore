@@ -1,0 +1,9 @@
+.git
+.github
+supabase/
+database/
+*.sql
+*.txt
+GUIA_INSTALACION.txt
+IMPORTANTE_AL_ACTUALIZAR_UBUNTU.txt
+uploads/

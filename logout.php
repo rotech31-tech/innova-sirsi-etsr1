@@ -1,0 +1,1 @@
+<?php declare(strict_types=1); require_once __DIR__.'/includes/init.php'; if(is_logged_in())log_activity('Cierre de sesión'); $_SESSION=[]; session_destroy(); session_start(); flash('success','La sesión se cerró correctamente.'); redirect('login.php');

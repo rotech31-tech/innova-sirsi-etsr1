@@ -1,0 +1,24 @@
+VERSIÓN 8 FINAL - GESTIÓN POR TURNOS
+
+NUEVO
+- Turnos institucionales: Matutino, Vespertino y Nocturno.
+- Cada Encargado queda asociado a un turno.
+- El Encargado solo administra profesores, horarios, anuncios y tickets de su turno.
+- Un profesor puede pertenecer a varios turnos con la misma cuenta.
+- El primer Encargado elige turno desde setup_admin.php.
+- Los siguientes Encargados se crean desde Profesores, indicando su turno.
+- Los tickets incluyen el turno en que se reportó la falla.
+- Los anuncios se publican para el turno del Encargado.
+
+COMPARTIDO ENTRE TURNOS
+- Salas, equipos y periféricos.
+- Check-In y Check-Out.
+- Historial de salas y adopción del último estado.
+
+SE MANTIENE
+- Lunes a viernes solamente.
+- Recuperación de contraseña.
+- QR de equipos.
+- Historial y adopción de estados.
+- Edición/archivado seguro.
+- Diseño minimalista blanco y negro.

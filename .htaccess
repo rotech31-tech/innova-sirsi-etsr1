@@ -1,0 +1,6 @@
+Options -Indexes
+DirectoryIndex index.php
+ErrorDocument 404 /innova_sirsi_etsr/404.php
+<FilesMatch "^(composer\.json|.*\.sql|.*\.txt|README\.md)$">
+  Require all denied
+</FilesMatch>

@@ -1,0 +1,8 @@
+INNOVA SIRSI V11.3 - VALIDACION DE CEDULA URUGUAYA
+
+- Se reemplazó la validación básica de longitud por validación del dígito verificador de la Cédula de Identidad uruguaya.
+- Se aceptan formatos con o sin puntos y guion.
+- Se valida en servidor (PHP) y también en navegador (JavaScript).
+- Se aplica al alta y edición de usuarios, configuración inicial y recuperación de contraseña.
+- No consulta bases oficiales ni confirma la existencia real de una persona; valida únicamente la coherencia matemática del número de CI.
+- No requiere cambios en MySQL.

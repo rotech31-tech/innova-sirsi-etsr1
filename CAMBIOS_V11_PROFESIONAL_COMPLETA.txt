@@ -1,0 +1,35 @@
+INNOVA SIRSI ETSR - V11 PROFESIONAL COMPLETA
+
+Esta versión conserva toda la funcionalidad de V8/V10 y agrega, sin servicios externos:
+
+- Mapa interactivo isométrico de salas y equipos, alimentado por MySQL.
+- Ficha individual de cada sala con estado, inventario, sesiones e incidencias.
+- Estado de salas: Disponible / En uso / Con incidencia.
+- Panel principal con información operativa y actualización automática cada 60 segundos.
+- Barra discreta de acciones rápidas.
+- Actividad reciente basada en log_actividad.
+- Vista semanal visual de horarios para Encargado y Docente.
+- Búsqueda global por sala, equipo, profesor y ticket.
+- Filtros mejorados en salas, equipos y tickets.
+- Flujo visual de tickets: Abierto > En revisión > En proceso > Resuelto > Cerrado.
+- Historial de movimientos del ticket.
+- Historial de salas con resumen visual.
+- Perfil personal y cambio de contraseña.
+- Centro de reportes con CSV e impresión / Guardar como PDF.
+- Copia de seguridad SQL descargable desde el panel de Encargado.
+- Pantallas 403 y 404 propias.
+- Indicador discreto de estado del sistema en el pie.
+- Sin emojis, sin librerías de iconos y sin IA externa.
+
+BASE DE DATOS
+No se agregaron ni modificaron tablas respecto a la base V8 completa.
+La misma base innova_sirsi es compatible con esta versión.
+
+XAMPP
+El config.php incluido está preparado para el MySQL habitual de XAMPP:
+DB_USER=root
+DB_PASS vacío
+
+UBUNTU SERVER
+Al actualizar el servidor, conservar el includes/config.php que ya está configurado con innova_app y la contraseña del servidor.
+No reemplazarlo por el config.php de XAMPP.

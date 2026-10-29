@@ -1,0 +1,9 @@
+INNOVA SIRSI V11.4
+
+Cambios:
+- Corregido el error que mostraba datos del Encargado al editar un profesor.
+- La cabecera ya no sobrescribe variables de usuario de las pantallas.
+- Reescrita la pantalla Editar profesor/encargado para evitar fugas de código y mejorar legibilidad.
+- Tablas con encabezado azul noche, línea cian, filas alternadas, hover técnico y acciones compactas.
+- Estados con mayor contraste manteniendo la identidad profesional.
+- No requiere cambios en la base de datos.
